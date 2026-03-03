@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\CurrencyApiController.cs~RF784570a.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LoyalCode.Dmitriev.Ivan.Application\LoyalCode.Dmitriev.Ivan.Application.csproj" />
+    <ProjectReference Include="..\LoyalCode.Dmitriev.Ivan.Infrustructure\LoyalCode.Dmitriev.Ivan.Infrustructure.csproj" />
+  </ItemGroup>
+
+</Project>
